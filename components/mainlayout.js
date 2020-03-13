@@ -1,22 +1,25 @@
 import Footer from './footer'
 import Header from './header'
 
-export default function Container({children}) {
+// komponen dengan header dan footer
+export default function MainLayout({children}) {
 	return <div className="layout">
+		<Header />
 		<div className="container">
-			<Header />
 			{children}
 		</div>
 		<Footer />
 
 		<style jsx>{`
 			.layout {
-				justify-content: center;
+				align-items: center;
 				display: flex;
-				min-height: 100vh;
+				flex-direction: column;
+				height: 100vh;
 			}
 			.container {
 				background-color: lightyellow;
+				flex: 1;
 				width: 800px;
 			}
 		`}</style>

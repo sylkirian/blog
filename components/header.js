@@ -3,7 +3,7 @@ import { faFacebookF, faInstagram, faTwitter, faWhatsapp } from '@fortawesome/fr
 import { faCircle, faSearch, faShoppingBag, faUser } from '@fortawesome/free-solid-svg-icons'
 
 export default function Header() {
-	return <div className="head">
+	return <div className="header">
 		<div>
 			<LayeredIcon icon={faFacebookF} />
 			<LayeredIcon icon={faTwitter} />
@@ -17,9 +17,10 @@ export default function Header() {
 		</div>
 
 		<style jsx>{`
-			.head {
+			.header {
 				display: flex;
 				justify-content: space-between;
+				width: 800px;
 			}
 		`}</style>
 	</div>

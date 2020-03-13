@@ -1,13 +1,13 @@
-import Container from '../components/container'
+import MainLayout from '../components/mainlayout'
 import Head from 'next/head'
 
 export default function Home() {
-	return <div className="layout">
+	return <MainLayout>
 		<Head>
 			<title>Blog</title>
 		</Head>
-		<Container>
-			
-		</Container>
-	</div>
+		<div>
+			AAA
+		</div>
+	</MainLayout>
 }
