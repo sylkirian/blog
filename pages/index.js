@@ -1,7 +1,8 @@
 import MainLayout from '../components/mainlayout'
 import Head from 'next/head'
+import { i18n, withTranslation } from '../i18n'
 
-export default function Home() {
+function Home() {
 	return <MainLayout>
 		<Head>
 			<title>Blog</title>
@@ -11,3 +12,5 @@ export default function Home() {
 		</div>
 	</MainLayout>
 }
+
+export default withTranslation('common')(Home)
